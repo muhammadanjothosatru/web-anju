@@ -29,37 +29,6 @@ export default function Home() {
       <Head>
         <title>Home - Muhammad Anjotho Satru</title>
       </Head>
-        {/* <Container
-          my="40px"
-          display="flex"
-          flexDirection="column"
-          justifyContent="center"
-          alignItems="center"
-          >
-            <Text>Hello, World!</Text>
-
-            {colorMode === "light" ? (
-              <IconButton
-                my="20px"
-                isRound
-                color="gray.800"
-                icon={<MoonIcon/>}
-                variant="outline"
-                onClick={toggleColorMode}
-                />
-            ) : (
-              <IconButton
-                my="20px"
-                isRound
-                color="yellow.500"
-                icon={<SunIcon/>}
-                variant="outline"
-                onClick={toggleColorMode}
-                />
-            )
-            }
-
-        </Container> */}
     </Container>
     
   )

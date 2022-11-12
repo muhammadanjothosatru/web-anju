@@ -44,15 +44,12 @@ function NavbarTest() {
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
               <Button onClick={toggleColorMode}>
-                {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+                {colorMode === 'light' ? <MoonIcon /> : <SunIcon color="yellow.400"/>}
               </Button>
 
               <Menu>
                 <MenuButton
-                  as={Button}
                   rounded={'full'}
-                  variant={'link'}
-                  cursor={'pointer'}
                   minW={0}>
                   <Avatar
                     size={'sm'}
