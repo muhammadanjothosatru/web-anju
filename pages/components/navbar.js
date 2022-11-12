@@ -15,11 +15,16 @@ import Link from "next/link";
 
 function NavbarTest() {
   const { colorMode, toggleColorMode } = useColorMode();
-  
+
   return (
     <>
       <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
-        <Flex h={16} alignItems={"center"} justifyContent={"space-between"} px={20}>
+        <Flex
+          h={16}
+          alignItems={"center"}
+          justifyContent={"space-between"}
+          px={20}
+        >
           <HStack spacing={8} alignItems={"center"}>
             <Menu>
               <MenuButton rounded={"full"} minW={0}>
