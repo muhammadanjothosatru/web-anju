@@ -1,27 +1,18 @@
 import {
-  Container,
-  Text,
   useColorMode,
-  IconButton,
   Box,
   Flex,
   Avatar,
-  Link,
   Button,
   Menu,
   MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
-  useDisclosure,
   useColorModeValue,
   Stack,
   HStack,
-  Center,
 } from '@chakra-ui/react'
 import { SunIcon, MoonIcon } from '@chakra-ui/icons'
-import Head from 'next/head';
 import { NavLink } from 'react-bootstrap';
+import Link from 'next/link'
 
 function NavbarTest() {
   const {colorMode, toggleColorMode} = useColorMode();
@@ -35,8 +26,8 @@ function NavbarTest() {
               as={'nav'}
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
-              <NavLink>Home</NavLink>
-              <NavLink>Portofolio</NavLink>
+              <Link href='/'>Home</Link>
+              <Link href='/portofolio'>Portofolio</Link>
             </HStack>
           </HStack>
           
